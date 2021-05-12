@@ -4,6 +4,8 @@ import convertMoney from "./convertMoney.js";
 
 export default function trocar (){
     
+
+
     const saldoDinheiro = document.querySelector(".dinheiro-saldo");
     const saldoReceita = document.querySelector(".saldo-receita");
     const saldoDespesa = document.querySelector(".saldo-despesa");
