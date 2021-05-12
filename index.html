@@ -8,46 +8,46 @@
     <title>Financeiro</title>
 </head>
 <body>
-    <main class="main-container">
+    <main class="main">
+        <div class= "main-container">
+            <h1 class="controle">Controle de despesas</h1>
+            <div class="saldo">
+                <h2>Saldo atual</h2>
+                <p class="dinheiro-saldo">R$ 0,00</p>
+            </div>
 
-        <h1 class="controle">Controle de despesas</h1>
-        <div class="saldo">
-            <h2>Saldo atual</h2>
-            <p class="dinheiro-saldo">R$ 0,00</p>
+            <div class="rd-container">
+                <div class="receitas">
+                    <h3>Receitas</h2>
+                    <p class="saldo-receita">R$ 0,00</p>
+                </div>
+                <div class="despesas">
+                    <h3>Despesas</h2>
+                    <p class="saldo-despesa">R$ 0,00</p>
+                </div>
+            </div>
+            <div class="text">
+                <div class="tr">
+                    <h3 class="separador">Transações</h3>
+                </div ">
+                <div class="lista desativa" > 
+                    <ul class="ul">
+                    </ul>
+                </div>
+                <div class="tr">
+                    <h3 class="add-tr">Adicionar transação</h3>
+                </div>
+            </div>
+            <form action="">
+                <label for="nome-in" class="nome-lb" >Nome</label>
+                <input type="text" id="nome-in" placeholder="Nome da transação" name="nome" maxlength="40">
+                <label for="valor-in" class="valor-lb">Valor</label>
+                <p class="desc">(negativo - despesas, positivo - receita)</p>
+                <input type="number" id="valor-in" placeholder="Valor da transação" name="number">
+                <div  class="btn">Adicionar</div>
+            </form>
         </div>
-
-        <div class="rd-container">
-            <div class="receitas">
-                <h3>Receitas</h2>
-                <p class="saldo-receita">R$ 0,00</p>
-            </div>
-            <div class="despesas">
-                <h3>Despesas</h2>
-                <p class="saldo-despesa">R$ 0,00</p>
-            </div>
-        </div>
-        <div class="text">
-            <div class="tr">
-                <h3 class="separador">Transações</h3>
-            </div ">
-            <div class="lista desativa" > 
-                <ul class="ul">
-                </ul>
-            </div>
-            <div class="tr">
-                <h3 class="add-tr">Adicionar transação</h3>
-            </div>
-        </div>
-        <form action="">
-            <label for="nome-in" class="nome-lb" >Nome</label>
-            <input type="text" id="nome-in" placeholder="Nome da transação" name="nome" maxlength="40">
-            <label for="valor-in" class="valor-lb">Valor</label>
-            <p class="desc">(negativo - despesas, positivo - receita)</p>
-            <input type="number" id="valor-in" placeholder="Valor da transação" name="number">
-            <div  class="btn">Adicionar</div>
-        </form>
-
     </main>
 </body>
-<script type="text/javascript" src="scripit.js"></script>
+<script type="module" src="./script v2.js"></script>
 </html>

@@ -7,22 +7,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
     height: 100vh;
-    background: rgb(241, 239, 239);
+    background: rgb(180, 58, 236);
     font-family: 'Poppins', sans-serif;
     color: #363636;
 }
 
 
 /*main*/
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .main-container {
-    max-height: 80vh;
+    height: 800px;
+    background: #FFF;
     max-width: 400px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-top: 50px;
-    padding: 0 10px;
+    padding: 0 30px;
+    justify-content: center;
+    border-radius: 10px;
 }
 /*título*/
 .controle {
@@ -153,10 +159,10 @@ body{
     width: 10px;
 }
 .green{
-    background: green;
+    background:rgb(102, 180, 102);
 }
 .red{
-    background: red;
+    background: rgb(236, 124, 124);
 }
 .tr-direita p{
     display: flex;
@@ -172,6 +178,8 @@ body{
     display: none;
 }
 .botao-li{
+    display: flex;
+    color: rgb(153, 145, 219);
     position: relative;
     top: -10px;
     left: -5px;
@@ -181,6 +189,12 @@ body{
     padding: 0 5px;
     box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2);
     margin-right: 10px;
+    border-radius: 50%;
+}
+
+.botao-li:hover {
+    background: rgba(184, 182, 182, 0.8);
+    font-size: 0.78rem;
 }
 
 
