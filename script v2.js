@@ -1,4 +1,4 @@
-import trocar from "./trocar.js";
+import trocar from "./assets/js/trocar.js";
 
 
 trocar();
