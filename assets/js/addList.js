@@ -2,6 +2,23 @@ import convertMoney from "./convertMoney.js";
 
 export default function addList () {
 
+
+    class Construir{
+        constructor(classe, addClass){
+            this.classe = classe;
+            this.addClass = this.addClass;
+        }
+        create(){
+            const nova = document.createElement(this.classe);
+            nova.classList.add(this.addClass);
+
+        }
+    }
+    function addOb (classe, addClass, z){
+        const k = new Construir(classe, addClass);
+        const x = k.create();
+        z.appendChild(x);
+    }
     const saldoDinheiro = document.querySelector(".dinheiro-saldo");
     const saldoReceita = document.querySelector(".saldo-receita");
     const saldoDespesa = document.querySelector(".saldo-despesa");
@@ -10,13 +27,19 @@ export default function addList () {
     const valorAdd = document.querySelector("#valor-in");
     const btn = document.querySelector(".btn");
 
-    const liNova = document.createElement("li");
-    liNova.classList.add("item");
-    ul.appendChild(liNova);
 
-    const divNova = document.createElement("div");
+
+    const p1 = addOb("li", "item", ul);
+    addOb("div", "tr-esquerda", p1);
+
+
+    /*const liNova = document.createElement("li");
+    liNova.classList.add("item");
+    ul.appendChild(liNova);*/
+
+    /*const divNova = document.createElement("div");
     divNova.classList.add("tr-esquerda");
-    liNova.appendChild(divNova)
+    liNova.appendChild(divNova)*/
 
     
     const divNovaSecond = document.createElement("div");
