@@ -15,11 +15,18 @@ body{
 
 /*main*/
 .main{
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+@media (max-height: 750px) {
+    .main{
+        height: auto;
+    }
+}
+
 .main-container {
     height: 800px;
     background: #FFF;
